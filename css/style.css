@@ -51,3 +51,222 @@ table {
 
 
 /* Write your css below here */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    width: 100%;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body > section{
+    /* background-color:bisque; */
+    min-height: 100vh;
+    width: 100%;
+}
+
+header{
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: aliceblue;
+}
+
+.img-container{
+    flex: 1;
+}
+
+.logo-img{
+    height: 60px;
+    width: 60px;
+}
+
+.navbar{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    flex: 2;
+}
+
+main{
+    background-color: black;
+    background-image: url(../images/banner.jpg);
+    /* background: red; */
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* object-fit: cover; */
+}
+
+main .content{
+    /* background: red; */
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+main .content h1{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 75px;
+    font-weight: 600;
+}
+
+main .content h1 span:nth-child(1){
+    color: blue;
+    font-size: 90px;
+    margin: 0;
+    padding: 0;
+}
+main .content h1 span:nth-child(2){
+    color: red;
+    margin: 0;
+    padding: 0;
+}
+
+main .content p{
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+/* .student{
+    background-color:blanchedalmond;
+    /* padding: 10px; */
+    /* display: flex;
+}  */
+
+.student-img-container{
+    background: red;
+    flex: 3;
+    display: flex;
+}
+
+.student-img{
+ flex: 1;
+ height: 400px;
+ width: 600px;
+}
+.student-img-container p{
+    flex: 1;
+}
+.student-text{
+    padding: 30px;
+    background-color:bisque;
+    flex: 2;
+}
+
+ .cohort{
+    height: 100vh;
+    background: white;
+    /* background-color: purple; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-columns: 1fr 1fr; */
+    /* grid-template-columns: 1fr; */
+    /* margin-top: 60px; */
+    gap: 10px;
+    padding: 10px;
+    width: 90vw;
+    margin: auto;
+} 
+.cohort .content{
+    /* background-color: green; */
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cohort .content .img-container{
+    /* background-color: red; */
+    flex: 1;
+}
+.cohort .content .text-container{
+    /* background-color: white; */
+    flex: 1;
+    width: 100%;
+}
+
+.cohort .content .img-container img{
+	height: 100%;
+	width: 100%;
+}
+
+ /* .jp .content .text-container button{
+    margin-bottom: 30px;
+    width: fit-content;
+    padding: 15px;
+    border-radius: 32px;
+    cursor: pointer;
+    color: blue;
+    border: blue 2px solid;
+}  */
+
+
+@media screen and (max-width: 1000px){
+    grid-template-columns: 1fr 1fr 1fr;
+	header{
+        height: fit-content;
+    }
+	main {
+		display: flex;
+		flex-wrap: wrap;
+	  }
+	  
+	  header {
+		flex: 1 0 100%;
+	  }
+	  
+	  main {
+		flex: 1 0 30%;
+		margin-right: 10px;
+	  }
+	  
+	  body {
+		margin-right: 0;
+	  }
+  	
+}
+@media screen and (max-width: 708px){
+    /* grid-template-columns: 1fr 1fr; */
+    .navbar{
+		display: flex;
+        flex-direction:column;
+    }
+	main {
+		display: flex;
+		flex-wrap: wrap;
+	  }
+	  
+	  header {
+		height: fit-content;
+		/* flex: 1 0 100%; */
+	  }
+	  
+	  main {
+		flex: 1 0 30%;
+		margin-right: 10px;
+	  }
+	  
+	  body {
+		margin-right: 0;
+	  }
+}
+    
