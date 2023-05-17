@@ -1,4 +1,4 @@
-## Lesson 3 Task 1
+## Lesson 3 Task One
 ## How to run/test this project
 * ensure you have git installed properly on your machine
 * ensure you have node js installed in your machine
@@ -12,3 +12,6 @@
 * Mr Johnson Promise (JP)
 * Mr Patrick
 ## This is a work of LM TechHub.
+
+Here is the link of my project:
+https://nchedubem.github.io/Lesson_3_Task_One_Chidubem_Nweke/
